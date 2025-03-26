@@ -1,0 +1,240 @@
+/* ===============================
+   Reset & Variables
+=================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2842b1;
+    --light: #ffffff;
+    --dark: #1f1e1f;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    --transition: all 0.3s ease-in-out;
+}
+
+body, html {
+    font-family: "Outfit", sans-serif;
+    /* background: var(--dark); */
+    color: var(--light);
+}
+
+/* ===============================
+   Navbar Styling
+=================================*/
+.navbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background: var(--dark);
+    box-shadow: var(--shadow);
+    z-index: 10;
+}
+
+
+/* Logo Styling */
+.navbar-logo{
+    flex:1;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--light);
+    cursor: pointer;
+}
+
+/* Menu Toggle (Mobile Hamburger) */
+.menu-toggles {
+    display: none;
+    cursor: pointer;
+}
+.menu-toggles img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Navbar Links (Desktop View) */
+.navbar-links {
+    flex:2;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-links .navbar-items {
+    list-style: none;
+    transition: var(--transition);
+}
+
+.navbar-links .navbar-items a {
+    text-decoration: none;
+    color: var(--light);
+    position: relative;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: var(--transition);
+}
+
+/* Hover and Active Effects */
+.navbar-links .navbar-items a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.navbar-links .navbar-items a:hover::after,
+.navbar-links .navbar-items a.active::after {
+    width: 100%;
+}
+
+.navbar-links .navbar-items a:hover {
+    color: var(--primary);
+}
+
+/* Navbar Buttons (Social and Resume) */
+.navbar-buttons {
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    
+}
+
+.navbar-social {
+    background: rgb(29, 27, 27);
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-social img {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar-social:hover {
+    background: var(--primary);
+}
+
+.navbar-btn {
+    text-decoration: none;
+    background: var(--primary);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: var(--light);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navbar-btn:hover {
+    background: var(--dark);
+    shadow: var(--shadow);
+}
+
+
+/* ===============================
+   Desktop Hero Styling
+=================================*/
+.desktop-hero{
+    position: relative;
+    padding: 0 200px;
+    display: flex;
+    background:var(--dark);
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;   
+}
+
+.mobile-hero{
+    display: none;
+}
+
+.hero-left-content {
+    position: absolute;
+    left: 20;
+    top:10;
+    padding: 0 50px;
+}
+
+.hero-left-content h3{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--primary);  
+}
+
+.hero-left-content h1{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.hero-left-content .quotes{
+    background:rgb(29, 27, 27);
+    height: 120px;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.hero-mid-content{
+    position: relative;
+    left: 25%;
+    align-self: center; 
+}
+
+
+
+.hero-right-content{
+    position: relative; /* Use relative positioning */
+    right: 2%; /* Default position */
+    top: -6%;
+    margin-right: 0; /* Remove hardcoded margin */
+}
+
+.hero-right-content h1{
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.hero-right-content a{
+    text-decoration: none;
+    background: var(--primary);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: var(--light);
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+.hero-right-content a:hover {
+    background: var(--dark);
+    shadow: var(--shadow);
+}
