@@ -93,14 +93,14 @@ Tablets - 1024px
   /* Navbar links hidden initially */
   .navbar-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background: var(--dark);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     gap: 15px;
     opacity: 0;
     transform: translateY(-20px);
@@ -117,7 +117,10 @@ Tablets - 1024px
 
   /* Add spacing to each link item */
   .navbar-links .navbar-items {
-    margin-top: 20px;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
   }
 
   /* Center buttons under links */
