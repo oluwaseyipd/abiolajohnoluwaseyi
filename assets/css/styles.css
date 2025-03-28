@@ -365,7 +365,7 @@ body, html {
 .hire-me-tabs .hire-me-items{
     width: 600px;
     display: flex;
-    background: var(--dark);
+    background: rgb(29, 27, 27);
     color: var(--light);
     border-radius: 10px;
     border: 1px solid var(--light);
@@ -425,3 +425,117 @@ body, html {
     background: var(--dark);
     shadow: var(--shadow);
 }
+
+
+/* ===============================
+    My Skills Styling
+=================================*/
+
+.skills{
+    padding: 100px 200px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark);
+    color: var(--light);
+}
+
+.skill-section-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.skill-section-title .image-container {
+    position: relative; 
+    width: 200px;
+    height: 100px;
+}
+
+.skill-section-title .image-container img{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    border-radius: 10px;
+}
+.skill-section-title .image-container h2 {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: var(--primary); 
+    font-size: 18px; 
+    text-align: center; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.skill-tabs{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-box{
+    background:rgb(29, 27, 27);
+    padding: 20px 15px;
+    border-radius: 15px;
+    /* border: 1px solid var(--light); */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+.skill-box .skill-title{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.skill-box .skill-title p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skill-box .skill-title p span{
+    color: var(--primary);
+}
+
+/* Progress Bar Container */
+.progress {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background:rgb(34, 34, 34);
+    border-radius: 5px;    
+    margin: 20px 0;
+}
+
+/* Filled Progress */
+
+.progress span {
+    display: block;
+    height: 100%;
+    width: var(--progress-width, 0%);
+    background: #007bff;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+/* Progress Circle at Stop Point */
+/* .progress span::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 16px;
+    height: 16px;
+    /* background: var(--dark); */
+    /* border-radius: 50%; */
+    /* border: 2px solid var(--primary); */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+} */
+
+

@@ -283,8 +283,8 @@ Tablets - 1024px
   /* Content */
   .mobile-hero-content {
     position: absolute; /* Position the content absolutely */
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%); /* Adjust for perfect centering */
     z-index: 3; /* Place it above the overlay */
     text-align: center; /* Center-align the text */
@@ -294,7 +294,7 @@ Tablets - 1024px
     flex-direction: column; /* Stack text and button vertically */
     align-items: start !important; /* Center horizontally */
     gap: 10px; /* Add spacing between elements */
-    text-align:left !important;
+    text-align: left !important;
   }
 
   .mobile-hero-content h3 {
@@ -309,7 +309,6 @@ Tablets - 1024px
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1.2;
-  
   }
 
   .mobile-hero-content h2 {
@@ -317,7 +316,7 @@ Tablets - 1024px
     font-weight: 600;
     margin-bottom: 20px;
   }
-  .mobile-hero-content p{
+  .mobile-hero-content p {
     margin-bottom: 20px;
   }
 
@@ -337,113 +336,132 @@ Tablets - 1024px
   }
 }
 
-
 /* ===============================
    About Section Styling
 =================================*/
 @media (max-width: 896px) {
   .about-section {
     display: flex;
-    padding:80px 20px;
+    padding: 80px 20px;
     flex-direction: column;
     align-items: center;
   }
-  .about-image{
+  .about-image {
     width: 100%;
     margin: 0 auto;
-}
+  }
 
-  .about-content{
-    flex:1;
+  .about-content {
+    flex: 1;
     padding: 20px 10px;
-}
+  }
 
-.section-title{
- display:none
-}
+  .section-title {
+    display: none;
+  }
 
-.mobile-section-title{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.mobile-section-title .image-container {
-  position: relative; 
-  width: 200px;
-  height: 100px;
-}
+  .mobile-section-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .mobile-section-title .image-container {
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
 
-.mobile-section-title .image-container img{
-  width: 100%;
-  height: 100%; 
-  object-fit: contain;
-  border-radius: 10px;
-}
-.mobile-section-title .image-container h2 {
-  position: absolute; 
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color: var(--primary); 
-  font-size: 18px; 
-  text-align: center; 
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
-}
+  .mobile-section-title .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .mobile-section-title .image-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary);
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
 
-.about-content p{
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .about-content a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+  }
 }
-
-.about-content a{
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 15px;
-}
-
-}
-
-
 
 /* ===============================
    Hire Me Section Styling
 =================================*/
 @media (max-width: 896px) {
   .hire-me-section {
-    padding:80px 20px;
+    padding: 80px 20px;
     align-items: center;
   }
 
-  .hire-me-box{
+  .hire-me-box {
     display: flex;
     flex-direction: column;
   }
 
-  .hire-me-tabs .hire-me-items{
+  .hire-me-tabs .hire-me-items {
     width: 100%;
   }
 
-  .hire-me-content{
+  .hire-me-content {
     width: 100%;
-}
+  }
 
-  .hire-me-content h2{
+  .hire-me-content h2 {
     font-size: 30px;
     font-weight: 500;
     color: var(--light);
     margin-bottom: 10px;
+  }
+  .hire-me-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .hire-me-button a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+  }
 }
-.hire-me-content p{
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
+
+
+/* ===============================
+   About Section Styling
+=================================*/
+@media (max-width: 896px) {
+  .skills {
+    padding: 80px 20px;
+    align-items: center;
+  }
+
+  .skill-tabs{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-.hire-me-button a{
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 15px;
+
+.skill-box{
+  margin: 8px 0;
 }
 }

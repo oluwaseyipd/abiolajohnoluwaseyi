@@ -112,7 +112,7 @@
     </div>
 
 <!-- Why Hire Me -->
-<div class="hire-me-section">
+<section class="hire-me-section">
     <div class="mobile-section-title">
         <div class="image-container">
             <img src="assets/images/title-stroke.png" alt="">
@@ -168,11 +168,87 @@
         </div>
 
     </div>
-</div>
+</section>
 
 
     <!-- Skills -->
+<section id="skills" class="skills">
+    <div class="skill-section-title">
+        <div class="image-container">
+            <img src="assets/images/title-stroke.png" alt="">
+        <h2>My Skills</h2>
+        </div>
+    </div>
 
+    <div class="skill-tabs">
+        <div class="skill-box">
+            <div class="skill-title">
+                <h3>HTML</h3>
+                <p>80 <span class="percentage">%</span></p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea omnis provident, fugit magni dolor earum porro corporis. Deserunt, nostrum ex.</p>
+            <div class="progress" data-progress="80">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <h3>CSS</h3>
+                <p>65 <span class="percentage">%</span></p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea omnis provident, fugit magni dolor earum porro corporis. Deserunt, nostrum ex.</p>
+            <div class="progress" data-progress="65">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <h3>Javascript</h3>
+                <p>60 <span class="percentage">%</span></p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea omnis provident, fugit magni dolor earum porro corporis. Deserunt, nostrum ex.</p>
+            <div class="progress" data-progress="60">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <h3>Tailwind</h3>
+                <p>75 <span class="percentage">%</span></p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea omnis provident, fugit magni dolor earum porro corporis. Deserunt, nostrum ex.</p>
+            <div class="progress" data-progress="75">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <h3>Bootstrap</h3>
+                <p>80 <span class="percentage">%</span></p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea omnis provident, fugit magni dolor earum porro corporis. Deserunt, nostrum ex.</p>
+            <div class="progress" data-progress="80">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <h3>ReactJS</h3>
+                <p>60 <span class="percentage">%</span></p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea omnis provident, fugit magni dolor earum porro corporis. Deserunt, nostrum ex.</p>
+            <div class="progress" data-progress="60">
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+</section>
     <!-- Portfolio -->
 
     <!-- Testimonials -->
@@ -180,6 +256,18 @@
     <!-- Blog -->
 
     <!-- Footer -->
+
+
+
+    <script>
+        document.querySelectorAll('.progress').forEach(progress => {
+    let value = progress.getAttribute('data-progress');
+    progress.querySelector('span').style.setProperty('--progress-width', value + '%');
+});
+
+    </script>
+
+
     <script src="assets/js/script.js"></script>
 </body>
 
