@@ -488,8 +488,17 @@ body, html {
 .skill-box .skill-title{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
+.skill-box .skill-title .skill-title-case{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+
 .skill-box .skill-title p{
     font-size: 20px;
     font-weight: bold;
@@ -531,9 +540,9 @@ body, html {
     transform: translate(50%, -50%);
     width: 16px;
     height: 16px;
-    /* background: var(--dark); */
-    /* border-radius: 50%; */
-    /* border: 2px solid var(--primary); */
+background: var(--dark); 
+ border-radius: 50%; 
+ border: 2px solid var(--primary); 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 } */
 
