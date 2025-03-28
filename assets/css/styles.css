@@ -368,8 +368,7 @@ body, html {
     background: rgb(29, 27, 27);
     color: var(--light);
     border-radius: 10px;
-    border: 1px solid var(--light);
-    shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
     margin-bottom: 50px;
     padding: 30px;
     justify-content-center;
