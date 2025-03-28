@@ -251,7 +251,7 @@ Tablets - 1024px
   .mobile-hero {
     position: relative; /* Set relative positioning for child elements */
     background: var(--dark); /* Black background */
-    height: 83vh; /* Full viewport height */
+    height: 95vh; /* Full viewport height */
     display: flex;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
@@ -316,7 +316,9 @@ Tablets - 1024px
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 20px;
-  
+  }
+  .mobile-hero-content p{
+    margin-bottom: 20px;
   }
 
   .mobile-hero-content .hero-btn {
@@ -365,6 +367,7 @@ Tablets - 1024px
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .mobile-section-title .image-container {
   position: relative; 
@@ -389,6 +392,11 @@ Tablets - 1024px
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
+.about-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
 
 .about-content a{
   padding: 10px 20px;
@@ -396,4 +404,46 @@ Tablets - 1024px
   font-size: 15px;
 }
 
+}
+
+
+
+/* ===============================
+   Hire Me Section Styling
+=================================*/
+@media (max-width: 896px) {
+  .hire-me-section {
+    padding:80px 20px;
+    align-items: center;
+  }
+
+  .hire-me-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hire-me-tabs .hire-me-items{
+    width: 100%;
+  }
+
+  .hire-me-content{
+    width: 100%;
+}
+
+  .hire-me-content h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--light);
+    margin-bottom: 10px;
+}
+.hire-me-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.hire-me-button a{
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 15px;
+}
 }

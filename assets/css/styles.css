@@ -244,7 +244,7 @@ body, html {
    About Me Styling
 =================================*/
 .about-section {
-    padding: 100px 200px;
+    padding: 80px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -331,6 +331,97 @@ body, html {
 }
 
 .about-content a:hover {
+    background: var(--dark);
+    shadow: var(--shadow);
+}
+
+
+
+/* ===============================
+   Why Hire Me Styling
+=================================*/
+
+.hire-me-section {
+    padding: 100px 200px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark);
+    color: var(--light);
+}
+
+.hire-me-box{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-me-tabs{
+    display: flex;
+    flex-direction: column;
+}
+
+.hire-me-tabs .hire-me-items{
+    width: 600px;
+    display: flex;
+    background: var(--dark);
+    color: var(--light);
+    border-radius: 10px;
+    border: 1px solid var(--light);
+    shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    padding: 30px;
+    justify-content-center;
+    align-items: center;
+}
+.hire-me-tabs .hire-me-items:first-child {
+    transform: rotate(5deg); /* Slightly tilt the box */
+    transform-origin: right center; /* Set the pivot point to the right center */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition for the tilt */
+}
+
+.hire-me-items .hire-image{
+    background: var(--primary);
+    margin-right: 20px;
+    padding: 3px 6px;
+    border-radius: 10px;
+} 
+
+.hire-me-items .hire-image img{
+    width: 40px;
+}
+
+.hire-me-content{
+    width: 600px;
+}
+
+.hire-me-content h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--light);
+    margin-bottom: 20px;
+}
+
+.hire-me-content p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.hire-me-button a{
+    text-decoration: none;
+    background: var(--primary);
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: var(--light);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hire-me-button a:hover {
     background: var(--dark);
     shadow: var(--shadow);
 }
