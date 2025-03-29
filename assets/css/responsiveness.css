@@ -362,7 +362,7 @@ Tablets - 1024px
   /* Content */
   .mobile-hero-content {
     position: absolute; /* Position the content absolutely */
-    top: 55%;
+    top: 60%;
     left: 40%;
     transform: translate(-50%, -50%); /* Adjust for perfect centering */
     z-index: 3; /* Place it above the overlay */
