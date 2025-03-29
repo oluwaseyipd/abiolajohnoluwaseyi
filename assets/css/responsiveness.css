@@ -327,7 +327,7 @@ Tablets - 1024px
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 50vh; /* Full viewport height */
+    height: 30vh; /* Full viewport height */
     display: flex;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
