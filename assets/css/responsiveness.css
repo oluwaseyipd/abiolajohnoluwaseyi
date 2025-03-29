@@ -323,7 +323,7 @@ Tablets - 1024px
   /* Mobile Hero Section */
   .mobile-hero {
     position: relative; /* Set relative positioning for child elements */
-    background: url("assets/images/hero-image-2.png"); /* Black background */
+    background: url("hero-image-2.png"); /* Black background */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -421,7 +421,7 @@ Tablets - 1024px
   /* Mobile Hero Section */
   .mobile-hero {
     position: relative; /* Set relative positioning for child elements */
-    background: url("assets/images/hero-image-2.png"); /* Black background */
+    background: url("hero-image-2.png"); /* Black background */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
