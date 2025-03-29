@@ -69,7 +69,80 @@ Tablets - 1024px
   }
 }
 
-@media (max-width: 895px) {
+@media (min-width: 768px) and (max-width: 980px) {
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  position: relative;
+}
+
+/* Logo sticks to the left */
+.navbar-logo {
+  flex-shrink: 0;
+  text-align: left;
+}
+
+/* Menu toggle stays on the right */
+.menu-toggles {
+  display: block;
+  cursor: pointer;
+}
+
+/* Navbar links hidden initially */
+.navbar-links {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--dark);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  gap: 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+/* Show navbar links when toggled */
+.navbar-links.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Add spacing to each link item */
+.navbar-links .navbar-items {
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Center buttons under links */
+.navbar-buttons {
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Full-width buttons for mobile */
+.navbar-btn {
+  width: 100%;
+  text-align: center;
+}
+
+}
+@media (max-width:  768px) {
   .navbar {
     position: fixed !important;
     top: 0 !important;
@@ -243,7 +316,99 @@ Tablets - 1024px
   }
 }
 
-@media (max-width: 896px) {
+@media (min-width: 768px) and (max-width: 980px) {
+  .desktop-hero {
+    display: none; /* Hide desktop hero on mobile */
+  }
+  /* Mobile Hero Section */
+  .mobile-hero {
+    position: relative; /* Set relative positioning for child elements */
+    background: var(--dark); /* Black background */
+    height: 70vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    overflow: hidden; /* Prevent content from overflowing */
+    padding: 0 80px;
+  }
+  /* Background Image */
+  .mobile-hero-bg {
+    position: absolute; /* Position the image absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    z-index: 1; /* Place it behind the overlay and content */
+  }
+
+  /* Overlay */
+  .mobile-hero-overlay {
+    position: absolute; /* Position the overlay absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2; /* Place it above the background image */
+  }
+
+  /* Content */
+  .mobile-hero-content {
+    position: absolute; /* Position the content absolutely */
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    z-index: 3; /* Place it above the overlay */
+    color: var(--light); /* Light text color */
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column; /* Stack text and button vertically */
+    align-items: start !important; /* Center horizontally */
+    gap: 10px; /* Add spacing between elements */
+    text-align: left !important;
+  }
+
+  .mobile-hero-content h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary);
+    /* margin-bottom: px; */
+  }
+
+  .mobile-hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .mobile-hero-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .mobile-hero-content p {
+    margin-bottom: 20px;
+  }
+
+  .mobile-hero-content .hero-btn {
+    text-decoration: none;
+    background: var(--primary);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: var(--light);
+    transition: var(--transition);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .mobile-hero-content .hero-btn:hover {
+    background: var(--dark);
+  }
+}
+
+@media (max-width:  768px) {
   .desktop-hero {
     display: none; /* Hide desktop hero on mobile */
   }
@@ -336,10 +501,169 @@ Tablets - 1024px
   }
 }
 
+@media (max-width: 667px) {
+  .mobile-hero {
+    height: 100vh;
+  }
+ 
+  .mobile-hero-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-top: 50px;
+  }
+
+  .mobile-hero-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .mobile-hero-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .mobile-hero-content p {
+    margin-bottom: 20px;
+  }
+
+  .mobile-hero-content .hero-btn {
+    text-decoration: none;
+    background: var(--primary);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: var(--light);
+    transition: var(--transition);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+}
+
 /* ===============================
    About Section Styling
 =================================*/
-@media (max-width: 896px) {
+@media (max-width: 1400px) {
+  .about-section {
+    display: flex;
+    padding: 80px 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    display: none;
+  }
+
+  .mobile-section-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .mobile-section-title .image-container {
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
+
+  .mobile-section-title .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .mobile-section-title .image-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary);
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .about-content {
+    flex: 1;
+    padding: 20px 10px;
+  }
+  .about-image {
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 30px 0;
+    justify-content: left;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .about-section {
+    display: flex;
+    padding: 80px 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .section-title {
+    display: none;
+  }
+
+  .mobile-section-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .mobile-section-title .image-container {
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
+
+  .mobile-section-title .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .mobile-section-title .image-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary);
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .about-content {
+    flex: 1;
+    padding: 20px 10px;
+  }
+  .about-image {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 30px 0;
+    justify-content: left;
+  }
+
+}
+@media (max-width: 768px) {
   .about-section {
     display: flex;
     padding: 80px 20px;
@@ -406,7 +730,86 @@ Tablets - 1024px
 /* ===============================
    Hire Me Section Styling
 =================================*/
-@media (max-width: 896px) {
+@media (max-width: 1400px) {
+  .hire-me-section {
+    padding: 80px 60px;
+    align-items: center;
+  }
+  
+.hire-me-box{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hire-me-tabs .hire-me-items{
+  width: 450px;
+  display: flex;
+  background: rgb(29, 27, 27);
+  color: var(--light);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+  margin-bottom: 50px;
+  padding: 20px;
+  justify-content:center;
+  align-items: center;
+}
+.hire-me-content{
+  width: 400px;
+  margin-left: 10px;
+}
+
+.hire-me-content h2{
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--light);
+  margin-bottom: 20px;
+}
+.hire-me-content p{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.hire-me-button a{
+  text-decoration: none;
+  background: var(--primary);
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 20px;
+  color: var(--light);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hire-me-button a:hover {
+  background: var(--dark);
+  shadow: var(--shadow);
+}
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .hire-me-section {
+    padding: 80px 80px;
+    align-items: center;
+  }
+  .hire-me-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .hire-me-tabs .hire-me-items{
+    width: 100%;
+  }
+  .hire-me-content {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
   .hire-me-section {
     padding: 80px 20px;
     align-items: center;
@@ -445,9 +848,34 @@ Tablets - 1024px
 
 
 /* ===============================
-   About Section Styling
+   Skills Section Styling
 =================================*/
-@media (max-width: 896px) {
+@media (max-width: 1400px) {
+  .skills {
+    padding: 80px 60px;
+    align-items: center;
+  }
+  .skill-box  p{
+    font-size: 14px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .skills {
+    padding: 80px 80px;
+    align-items: center;
+  }
+  .skill-tabs{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+@media (max-width: 768px) {
   .skills {
     padding: 80px 20px;
     align-items: center;
@@ -464,4 +892,8 @@ Tablets - 1024px
 .skill-box{
   margin: 8px 0;
 }
+}
+
+@media (max-width: 667px) {
+
 }
