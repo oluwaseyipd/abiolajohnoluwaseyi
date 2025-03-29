@@ -323,13 +323,19 @@ Tablets - 1024px
   /* Mobile Hero Section */
   .mobile-hero {
     position: relative; /* Set relative positioning for child elements */
-    background: var(--dark); /* Black background */
+    background: url("/assets/images/hero-image-2.png"); /* Black background */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     height: 70vh; /* Full viewport height */
     display: flex;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     overflow: hidden; /* Prevent content from overflowing */
     padding: 0 80px;
+  }
+  .mobile-hero img{
+    display: none;
   }
   /* Background Image */
   .mobile-hero-bg {
@@ -415,12 +421,18 @@ Tablets - 1024px
   /* Mobile Hero Section */
   .mobile-hero {
     position: relative; /* Set relative positioning for child elements */
-    background: var(--dark); /* Black background */
+    background: url("/assets/images/hero-image-2.png"); /* Black background */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     height: 95vh; /* Full viewport height */
     display: flex;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     overflow: hidden; /* Prevent content from overflowing */
+  }
+  .mobile-hero img{
+    display: none;
   }
 
   /* Background Image */
