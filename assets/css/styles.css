@@ -167,7 +167,7 @@ body, html {
     background:var(--dark);
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;   
 }
 
@@ -210,6 +210,12 @@ body, html {
     align-self: center; 
 }
 
+.hero-mid-content img{
+    position: relative;
+    width: 1100px;
+    left: -8%;
+}
+
 .hero-right-content{
     position: relative; /* Use relative positioning */
     right: 2%; /* Default position */
@@ -245,32 +251,30 @@ body, html {
 =================================*/
 .about-section {
     padding: 80px 200px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    justify-content: center;
     align-items: center;
     background: var(--dark);
     color: var(--light);
 }
 
-.about-image{
-    height: 500px;
-    width: 500px;
+/* .about-image{
+    height: 500;
+    width: 100%;
     background: var(--dark);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-}
+} */
 
-.about-image img{
+.about-image video{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.about-content{
-    flex:1;
-    padding: 0 50px;
-}
 .mobile-section-title{
     display: none;
 }
@@ -305,7 +309,7 @@ body, html {
 }
 
 
-.about-content h1{
+.about-content h2{
     font-size: 40px;
     font-weight: 500;
     color: var(--primary);
@@ -352,7 +356,7 @@ body, html {
 .hire-me-box{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
 }

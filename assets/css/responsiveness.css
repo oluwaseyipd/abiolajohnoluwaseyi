@@ -10,6 +10,63 @@ Tablets - 1024px
 /* ===============================
    Navbar
 =================================*/
+@media (min-width: 1025px) and (max-width: 1439px){
+  .navbar {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    align-items: center; /* Vertically align all items */
+    justify-content: space-between; /* Space out logo, links, and toggles */
+    padding: 10px 40px; /* Adjust padding for smaller screens */
+    position: relative;
+  }
+    /* Logo */
+    .navbar .navbar-logo {
+      flex-shrink: 0; /* Prevent the logo from shrinking */
+      text-align: left;
+    }
+  
+    .navbar .navbar-logo a {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    /* Navbar Links */
+    .navbar .navbar-links {
+      display: flex; /* Ensure links are in a row */
+      flex-direction: row; /* Align links horizontally */
+      align-items: center; /* Vertically align links */
+      gap: 20px; /* Add spacing between links */
+    }
+  
+    .navbar .navbar-links .navbar-items {
+      list-style: none; /* Remove default list styling */
+      margin: 0; /* Reset margin to avoid misalignment */
+      padding: 0; /* Reset padding to avoid misalignment */
+    }
+  
+    .navbar .navbar-links .navbar-items a {
+      text-decoration: none;
+      font-size: 14px; /* Adjust font size for smaller screens */
+      color: var(--light);
+      padding: 10px 15px; /* Add padding for clickable area */
+      display: inline-block; /* Ensure proper alignment */
+    }
+  
+    .menu-toggles img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    /* Navbar Buttons */
+    .navbar-buttons {
+      display: flex;
+      align-items: center; /* Vertically align buttons */
+      gap: 10px; /* Add spacing between buttons */
+    }
+  
+    .navbar-btn {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      padding: 5px 10px; /* Adjust padding for smaller screens */
+    }
+}
 @media (max-width: 1024px) {
   .navbar {
     display: flex; /* Use Flexbox for horizontal alignment */
@@ -220,13 +277,14 @@ Tablets - 1024px
 =================================*/
 @media (max-width: 1440px) {
   .hero-left-content {
-    position: absolute;
-    /* left: 10; */
+    position: relative;
+    left: -10%;
     top: 5;
     padding: 0 10px;
   }
 
   .hero-left-content h3 {
+    position: relative;
     font-size: 30px;
     font-weight: 500;
     color: var(--primary);
@@ -235,6 +293,11 @@ Tablets - 1024px
   .hero-left-content h1 {
     font-size: 70px;
     margin-bottom: 10px;
+  }
+  .hero-left-content .quotes{
+    background:rgb(29, 27, 27);
+    height: 140px;
+    width: 450px;
   }
 
   .hero-mid-content {
@@ -245,11 +308,13 @@ Tablets - 1024px
 
   .hero-mid-content img {
     width: 900px;
+    position: relative;
+    left: -70%;
   }
 
   .hero-right-content {
     position: relative;
-    right: 3%;
+    left: -80%;
     top: -4%;
     margin-right: 0;
   }
@@ -260,7 +325,7 @@ Tablets - 1024px
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
   .desktop-hero {
     position: relative;
     padding: 0 60px;
@@ -273,9 +338,9 @@ Tablets - 1024px
   }
 
   .hero-left-content {
-    position: absolute;
-    /* left: 10; */
-    top: 5;
+    position: relative;
+    left: 0;
+    top: 10%;
     padding: 0 10px;
   }
 
@@ -295,17 +360,19 @@ Tablets - 1024px
 
   .hero-mid-content {
     position: relative;
-    left: 0;
+    left: -40%;
     align-self: center;
   }
 
   .hero-mid-content img {
     width: 800px;
+    position: relative;
+    left: 0;
   }
 
   .hero-right-content {
     position: relative;
-    right: 25%;
+    left: -65%;
     top: -3%;
     margin-right: 0;
   }
@@ -327,7 +394,7 @@ Tablets - 1024px
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 30vh; /* Full viewport height */
+    height: 50vh; /* Full viewport height */
     display: flex;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
@@ -559,9 +626,38 @@ Tablets - 1024px
 =================================*/
 @media (max-width: 1400px) {
   .about-section {
-    display: flex;
-    padding: 80px 60px;
-    flex-direction: column;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 100px 60px;
+    align-items: center;
+  }
+
+  .about-content {
+    flex: 1;
+    padding: 20px 10px;
+  }
+  .about-image {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 30px 0;
+    justify-content: left;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .about-section {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 100px 60px;
     align-items: center;
   }
   .section-title {
@@ -597,30 +693,15 @@ Tablets - 1024px
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
-  .about-content {
-    flex: 1;
-    padding: 20px 10px;
-  }
-  .about-image {
-    width: 80%;
-    height: 20%;
-    margin: 0 auto;
-    object-fit: cover;
-  }
-  .about-content p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 30px 0;
-    justify-content: left;
-  }
 
 }
 
 @media (min-width: 768px) and (max-width: 980px) {
   .about-section {
-    display: flex;
+    display:grid;
+    grid-template-columns: 1fr;
+    /* gap: px; */
     padding: 80px 80px;
-    flex-direction: column;
     align-items: center;
   }
  
@@ -663,12 +744,18 @@ Tablets - 1024px
   }
   .about-image {
     width: 100%;
-    height: 50%;
+    height: 100%;
     margin: 0 auto;
     object-fit: cover;
   }
+  .about-content h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: -20px;
+}
   .about-content p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     margin: 30px 0;
     justify-content: left;
@@ -677,9 +764,10 @@ Tablets - 1024px
 }
 @media (max-width: 768px) {
   .about-section {
-    display: flex;
+    display:grid;
+    grid-template-columns: 1fr;
+    /* gap: px; */
     padding: 80px 20px;
-    flex-direction: column;
     align-items: center;
   }
   .about-image {
@@ -688,8 +776,8 @@ Tablets - 1024px
   }
 
   .about-content {
-    flex: 1;
-    padding: 20px 10px;
+    /* flex: 1;
+    padding: 20px 10px; */
   }
 
   .section-title {
@@ -726,6 +814,13 @@ Tablets - 1024px
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
 
+  .about-content h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: -20px;
+}
+
   .about-content p {
     font-size: 18px;
     line-height: 1.5;
@@ -757,7 +852,7 @@ Tablets - 1024px
 }
 
 .hire-me-tabs .hire-me-items{
-  width: 450px;
+  width: 500px;
   display: flex;
   background: rgb(29, 27, 27);
   color: var(--light);
@@ -769,7 +864,7 @@ Tablets - 1024px
   align-items: center;
 }
 .hire-me-content{
-  width: 400px;
+  width: 100%;
   margin-left: 10px;
 }
 
