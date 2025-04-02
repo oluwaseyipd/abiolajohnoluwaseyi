@@ -197,6 +197,9 @@ Tablets - 1024px
   width: 100%;
   text-align: center;
 }
+.quick-contact{
+  display: none;
+}
 
 }
 @media (max-width:  768px) {
@@ -269,6 +272,9 @@ Tablets - 1024px
   .navbar-btn {
     width: 100%;
     text-align: center;
+  }
+  .quick-contact{
+    display: none;
   }
 }
 
@@ -1003,4 +1009,186 @@ Tablets - 1024px
 
 @media (max-width: 667px) {
 
+}
+
+
+/* ===============================
+   Portfolio Section Styling
+=================================*/
+@media (max-width: 1400px) {
+  .portfolio {
+    padding: 80px 60px;
+    align-items: center;
+  }
+  .portfolio-tabs{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-tabs .portfolio-box img{
+  max-width: 350px;
+  border-radius: 15px 15px 0 0;
+}
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .portfolio {
+    padding: 80px 80px;
+    align-items: center;
+  }
+  .portfolio-tabs{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-tabs .portfolio-box img{
+  max-width: 300px;
+  border-radius: 15px 15px 0 0;
+}
+}
+
+@media (max-width: 768px) {
+  .portfolio{
+    padding: 80px 20px;
+    align-items: center;
+}
+.portfolio-tabs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-tabs .portfolio-box img{
+  max-width: 350px;
+  border-radius: 15px 15px 0 0;
+}
+}
+
+/* ===============================
+   Testimonial Section Styling
+=================================*/
+@media (max-width: 1400px) {
+  .testimonials{
+    padding: 80px 60px;
+    align-items: center;
+}
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .testimonials{
+    padding: 80px 80px;
+    align-items: center;
+}
+}
+@media (max-width: 768px) {
+  .testimonials{
+    padding: 80px 20px;
+    align-items: center;
+}
+.swiper{
+  overflow: hidden;
+}
+}
+
+/* ===============================
+   Contact Section Styling
+=================================*/
+@media (max-width: 1400px) {
+  .contact{
+    padding: 80px 60px;
+    align-items: center;
+}
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .contact{
+    padding: 80px 80px;
+    align-items: center;
+}
+.contact .contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  margin: 40px 0;
+  width: 100%;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: -3px;
+}
+.form-group input{
+  margin-bottom: 5px;
+}
+}
+
+
+@media (max-width: 768px) {
+  .contact{
+    padding: 80px 20px;
+    align-items: center;
+}
+.contact .contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-container .contact-left-content h2{
+  font-size: 40px;
+}
+.contact-container .contact-left-content h3{
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: -3px;
+}
+.form-group input{
+  margin-bottom: 5px;
+}
+
+form{
+  margin: 40px 0;
+  width: 100%;
+}
+
+}
+
+/* ===============================
+   Footer Section Styling
+=================================*/
+@media (max-width: 768px) {
+  .footer{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+  text-align: center;
+}
+.footer ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer ul .footer-items{
+  margin-top: 10px;
+}
+
+.footer p{
+  margin-top: 20px;
+}
 }

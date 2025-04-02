@@ -30,3 +30,25 @@ links.forEach(link => {
     });
 });
 
+// -------------------------------------
+//          Testimonial
+// ------------------------------------
+
+const swiper = new Swiper(".swiper", {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 1, // Default: 1 slide per view
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 1 },
+      1024: { slidesPerView: 3 },
+    },
+});

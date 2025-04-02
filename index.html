@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsiveness.css">
 
@@ -34,7 +35,7 @@
             <li class="navbar-items"><a href="#skills">Skills</a></li>
             <li class="navbar-items"><a href="#portfolio">Portfolio</a></li>
             <li class="navbar-items"><a href="#testimonials">Testimonials</a></li>
-            <li class="navbar-items"><a href="#blog">Blog</a></li>
+            <li class="navbar-items"><a href="#contact">Contact</a></li>
 
             <!-- Buttons -->
             <div class="navbar-buttons">
@@ -67,7 +68,17 @@
 
         </div>
 
-
+        <div class="quick-contact">
+            <a href="">
+                <img src="assets/images/icons/twitter-w.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/images/icons/instagram-w.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/images/icons/linkedin-w.png" alt="">
+            </a>
+        </div>
     </div>
     <!-- Mobile Devices -->
     <div class="mobile-hero">
@@ -97,7 +108,7 @@
         <div class="about-image">
             <!-- <img src="assets/images/about.png" alt="" srcset=""> -->
             <video src="assets/images/evelator-pitch.mp4" controls></video>
-            
+
         </div>
         <div class="about-content">
             <div class="section-title">
@@ -188,7 +199,7 @@
         <div class="skill-section-title">
             <div class="image-container">
                 <img src="assets/images/title-stroke.png" alt="">
-                <h2>My Skills</h2>
+                <h2>Skills</h2>
             </div>
         </div>
 
@@ -259,9 +270,9 @@
                     <div class="skill-title-case">
                         <img src="assets/images/icons/bootstrap.png" alt="">
                         <h3>Bootstrap</h3>
-                        </div>
-                        <p>80 <span class="percentage">%</span></p>
-                    
+                    </div>
+                    <p>80 <span class="percentage">%</span></p>
+
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea omnis provident, fugit magni dolor earum
                     porro corporis. Deserunt, nostrum ex.</p>
@@ -286,25 +297,247 @@
             </div>
 
         </div>
+        <script>
+            document.querySelectorAll('.progress').forEach(progress => {
+                let value = progress.getAttribute('data-progress');
+                progress.querySelector('span').style.setProperty('--progress-width', value + '%');
+            });
+        </script>
     </section>
     <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-section-title">
+            <div class="image-container">
+                <img src="assets/images/title-stroke.png" alt="">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
 
+        <div class="portfolio-tabs">
+            <div class="portfolio-box">
+                <img src="assets/images/portfolio/portfolio.jpg" alt="">
+                <h2>PrepMate</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
+                    voluptatum beatae quae. Iste molestiae officia facere?</p>
+                <div class="portfolio-btn">
+                    <a href="" class="btn">Source Code</a>
+                    <a href="" class="btn">Preview</a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="assets/images/portfolio/portfolio.jpg" alt="">
+                <h2>PrepMate</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
+                    voluptatum beatae quae. Iste molestiae officia facere?</p>
+                <div class="portfolio-btn">
+                    <a href="" class="btn">Source Code</a>
+                    <a href="" class="btn">Preview</a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="assets/images/portfolio/portfolio.jpg" alt="">
+                <h2>PrepMate</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
+                    voluptatum beatae quae. Iste molestiae officia facere?</p>
+                <div class="portfolio-btn">
+                    <a href="" class="btn">Source Code</a>
+                    <a href="" class="btn">Preview</a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="assets/images/portfolio/portfolio.jpg" alt="">
+                <h2>PrepMate</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
+                    voluptatum beatae quae. Iste molestiae officia facere?</p>
+                <div class="portfolio-btn">
+                    <a href="" class="btn">Source Code</a>
+                    <a href="" class="btn">Preview</a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="assets/images/portfolio/portfolio.jpg" alt="">
+                <h2>PrepMate</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
+                    voluptatum beatae quae. Iste molestiae officia facere?</p>
+                <div class="portfolio-btn">
+                    <a href="" class="btn">Source Code</a>
+                    <a href="" class="btn">Preview</a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="assets/images/portfolio/portfolio.jpg" alt="">
+                <h2>PrepMate</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
+                    voluptatum beatae quae. Iste molestiae officia facere?</p>
+                <div class="portfolio-btn">
+                    <a href="" class="btn">Source Code</a>
+                    <a href="" class="btn">Preview</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="see-more-btn">
+            <a href="" class="">See More</a>
+        </div>
+
+    </section>
     <!-- Testimonials -->
+    <div id="testimonials" class="testimonials">
+        <div class="testimonials-section-title">
+            <div class="image-container">
+                <img src="assets/images/title-stroke.png" alt="">
+                <h2>Testimonials</h2>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper testimonials-tabs">
+                <div class="swiper-slide testimonials-box">
+                    <img src="assets/images/icons/quote.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ab velit at nihil, deleniti tenetur.
+                        Distinctio quas ipsum optio iste dignissimos praesentium nihil, voluptatem nulla?</p>
+                    <div class="testimonials-info">
+                        <img src="assets/images/testimonials/testimonial.jpg" alt="">
+                        <div class="testimonials-profile">
+                            <h3 class="profile-name">Abiola John</h3>
+                            <p class="profile-role">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-box">
+                    <img src="assets/images/icons/quote.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ab velit at nihil, deleniti tenetur.
+                        Distinctio quas ipsum optio iste dignissimos praesentium nihil, voluptatem nulla?</p>
+                    <div class="testimonials-info">
+                        <img src="assets/images/testimonials/testimonial.jpg" alt="">
+                        <div class="testimonials-profile">
+                            <h3 class="profile-name">Abiola John</h3>
+                            <p class="profile-role">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-box">
+                    <img src="assets/images/icons/quote.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ab velit at nihil, deleniti tenetur.
+                        Distinctio quas ipsum optio iste dignissimos praesentium nihil, voluptatem nulla?</p>
+                    <div class="testimonials-info">
+                        <img src="assets/images/testimonials/testimonial.jpg" alt="">
+                        <div class="testimonials-profile">
+                            <h3 class="profile-name">Abiola John</h3>
+                            <p class="profile-role">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-box">
+                    <img src="assets/images/icons/quote.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ab velit at nihil, deleniti tenetur.
+                        Distinctio quas ipsum optio iste dignissimos praesentium nihil, voluptatem nulla?</p>
+                    <div class="testimonials-info">
+                        <img src="assets/images/testimonials/testimonial.jpg" alt="">
+                        <div class="testimonials-profile">
+                            <h3 class="profile-name">Abiola John</h3>
+                            <p class="profile-role">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Blog -->
+    </div>
+    <!-- contact -->
+    <div id="contact" class="contact">
+        <div class="contact-section-title">
+            <div class="image-container">
+                <img src="assets/images/title-stroke.png" alt="">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
 
+        <div class="contact-container">
+            <div class="contact-left-content">
+                <h2>Get in Touch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fuga earum, molestiae culpa ipsum
+                    vel.</p>
+
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <img src="assets/images/icons/envelope-w.png" alt="">
+
+                        </div>
+                        <a href="mailto:oluwaseyiae@gmail.com">oluwaseyiae@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                        <img src="assets/images/icons/phone-w.png" alt="">
+                        </div>
+                        <a href="tel:+2348106347009">(234) 8106347009</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                        <img src="assets/images/icons/location-w.png" alt="">
+                        </div>
+                        <a href="https://maps.app.goo.gl/Cq1FiJaiqyY27qHh7">Ogbomoso, Nigeria</a>
+                    </div>
+                </div>
+
+                <h3>Conect with Me</h3>
+                <div class="social-contact">
+                    <a href="">
+                        <img src="assets/images/icons/twitter-w.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/icons/instagram-w.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/icons/linkedin-w.png" alt="">
+                    </a>
+                </div>
+            </div>
+ 
+                <form action="">
+                    <div class="form-group">
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" placeholder="First Name">
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lasttName" placeholder="Last Name">
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" rows="5">Write your message here ...</textarea>
+                    </div>
+
+                    <button type="submit" id="submitButton">Send</button>
+                </form>
+        </div>
+    </div>
     <!-- Footer -->
 
+    <footer class="footer">
+        <ul>
+            <li class="footer-items"><a href="#about">About</a></li>
+            <li class="footer-items"><a href="#skills">Skills</a></li>
+            <li class="footer-items"><a href="#portfolio">Portfolio</a></li>
+            <li class="footer-items"><a href="#testimonials">Testimonials</a></li>
+            <li class="footer-items"><a href="#contact">Contact</a></li>
+        </ul>
+        <p>Copyright &copy Oluwaseyi | Designed by Oluwaseyi</p>
+    </footer>
 
-
-    <script>
-        document.querySelectorAll('.progress').forEach(progress => {
-            let value = progress.getAttribute('data-progress');
-            progress.querySelector('span').style.setProperty('--progress-width', value + '%');
-        });
-    </script>
-
-
+    <script src="assets/vendor/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
