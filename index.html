@@ -28,12 +28,12 @@
         <div class="menu-toggles">
             <img src="assets/images/icons/menu-w.png" alt="Open menu" class="navbar-menu open">
         </div>
-
+        
         <!-- Menu Links -->
         <ul class="navbar-links">
             <li class="navbar-items"><a href="#about">About</a></li>
-            <li class="navbar-items"><a href="#skills">Skills</a></li>
-            <li class="navbar-items"><a href="#portfolio">Portfolio</a></li>
+            <!-- <li class="navbar-items"><a href="#skills">Skills</a></li> -->
+            <li class="navbar-items"><a href="#portfolio">Projects</a></li>
             <li class="navbar-items"><a href="#testimonials">Testimonials</a></li>
             <li class="navbar-items"><a href="#contact">Contact</a></li>
 
@@ -51,11 +51,10 @@
     <!-- Large and Medium Devices -->
     <div class="desktop-hero">
         <div class="hero-left-content">
-            <h3 class="surname">ABIOLA</h3>
-            <h1 class="other-names">JOHN<br>OLUWASEYI</h1>
+            <h3 class="surname custom-text">ABIOLA</h3>
+            <h1 class="other-names custom-text">JOHN<br>OLUWASEYI</h1>
             <div class="quotes">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eligendi odit debitis quis
-                    sapiente perspiciatis!"</p>
+                <p>I love exploring and turning ideas into solutions for better user experiences. I grow with every line of code.</p>
 
             </div>
         </div>
@@ -69,14 +68,17 @@
         </div>
 
         <div class="quick-contact">
-            <a href="">
+            <a href="https://x.com/oluwaseyipd?t=Ic0bEtPkixq0j23KEkMCUQ&s=09" target="_blank">
                 <img src="assets/images/icons/twitter-w.png" alt="">
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/oluwaseyidp?igsh=MWIwM3IycXRpbjcwag==" target="_blank">
                 <img src="assets/images/icons/instagram-w.png" alt="">
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/abiola-john-oluwaseyi-b65336234" target="_blank">
                 <img src="assets/images/icons/linkedin-w.png" alt="">
+            </a>
+            <a href="https://github.com/oluwaseyipd" target="_blank">
+                <img src="assets/images/icons/github-w.png" alt="">
             </a>
         </div>
     </div>
@@ -117,12 +119,24 @@
                     <h2>About Me</h2>
                 </div>
             </div>
-            <h2>Abiola John Oluwaseyi</h2>
-            <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus accusamus,
-                repudiandae facilis quia ut quas iste illum molestias dolore omnis?
-                In, dolore voluptatibus odit aliquid rem sequi ullam consectetur tempore corrupti nostrum reprehenderit,
-                dignissimos cupiditate optio consequuntur
-                obcaecati distinctio molestiae mollitia quisquam ipsa alias eveniet quam qui rerum. Doloremque, beatae!
+
+            <div class="skill-tabs">
+                <span>Java Script</span>
+                <span>Python</span>
+                <span>CSS</span>
+                <span>HTML</span>
+                <span>React</span>
+                <span>Tailwind</span>
+                <span>Bootstrap</span>
+                <span>Java</span>
+            </div>
+
+            <h2>I love solving problems</h2>
+            <p class="about-text">
+                I’m a final-year Computer Science student with a deep passion for solving real-world problems through technology. My academic journey has shaped my curiosity and drive to understand how things work, especially in Software Engineering. I love learning, experimenting, and building solutions that make a difference.
+            </p>
+            <p class="about-text">
+                My frontend journey started from a love for bringing ideas to life visually. Over time, I’ve developed skills in creating clean, responsive, and user-friendly websites. I enjoy crafting seamless user experiences and writing thoughtful code.
             </p>
 
             <!-- <div class="about-buttons">
@@ -132,7 +146,7 @@
     </div>
 
     <!-- Why Hire Me -->
-    <section class="hire-me-section">
+    <!-- <section class="hire-me-section">
         <div class="mobile-section-title">
             <div class="image-container">
                 <img src="assets/images/title-stroke.png" alt="">
@@ -191,11 +205,11 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Skills -->
-    <section id="skills" class="skills">
+    <!-- <section id="skills" class="skills">
         <div class="skill-section-title">
             <div class="image-container">
                 <img src="assets/images/title-stroke.png" alt="">
@@ -303,84 +317,105 @@
                 progress.querySelector('span').style.setProperty('--progress-width', value + '%');
             });
         </script>
-    </section>
+    </section> -->
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="portfolio-section-title">
             <div class="image-container">
                 <img src="assets/images/title-stroke.png" alt="">
-                <h2>Portfolio</h2>
+                <h2>Projects</h2>
             </div>
         </div>
 
         <div class="portfolio-tabs">
             <div class="portfolio-box">
-                <img src="assets/images/portfolio/portfolio.jpg" alt="">
-                <h2>PrepMate</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
-                    voluptatum beatae quae. Iste molestiae officia facere?</p>
+                <img src="assets/images/portfolio/project-2.png" alt="">
+                <h2>Photizo Conference</h2>
+                <div class="skill-tabs">
+                <span>Java Script</span>
+                    <span>CSS</span>
+                    <span>HTML</span>
+                    </div>
+                <p>Led a team of four to design and develop a sleek, responsive website for Photizo, an annual event. Built a clean UI to help participants learn about the conference, view details, and seamlessly register online.</p>
                 <div class="portfolio-btn">
-                    <a href="" class="btn">Source Code</a>
-                    <a href="" class="btn">Preview</a>
+                    <a href="" class="btn">Github</a>
+                    <a href="" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="assets/images/portfolio/project-1.png" alt="">
+                <h2>Valentine Special</h2>
+                <div class="skill-tabs">
+                    <span>Java Script</span>
+                    <span>CSS</span>
+                    <span>HTML</span>
+                </div>
+                <p>Created a fun, memorable Valentine’s experience featuring surprise packages and an interactive music player for lovers. Designed with emotion and usability in mind to celebrate love through thoughtful design and smooth user interaction.</p>
+                <div class="portfolio-btn">
+                    <a href="" class="btn">Github</a>
+                    <a href="" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="assets/images/portfolio/project-3.png" alt="">
+                <h2>Resurtech</h2>
+                <div class="skill-tabs">
+                <span>Java Script</span>
+                    <span>CSS</span>
+                    <span>HTML</span>
+                    <span>Bootstrap</span>
+                    </div>
+<p>Designed a sleek, interactive, and responsive website for Resurtech, a platform that connects individuals with unused tech to those who can’t afford new devices. Focused on creating an intuitive user experience to promote sustainability and tech accessibility.</p>
+                <div class="portfolio-btn">
+                    <a href="" class="btn">Github</a>
+                    <a href="" class="btn">Live Demo</a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="assets/images/portfolio/portfolio.jpg" alt="">
-                <h2>PrepMate</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
-                    voluptatum beatae quae. Iste molestiae officia facere?</p>
+                <h2>PrepMate</h2> <span>Coming Soon</span>
+                <div class="skill-tabs">
+                    <span>Java Script</span>
+                    <span>CSS</span>
+                    <span>HTML</span>
+                    <span>React</span>
+                    <span>Tailwind</span>
+                </div>
+                <p>PrepMate is a CBT web platform for students to practice timed tests with performance tracking, leaderboards, and downloadable results. Built with React and Tailwind, featuring user authentication and admin management.</p>
                 <div class="portfolio-btn">
-                    <a href="" class="btn">Source Code</a>
-                    <a href="" class="btn">Preview</a>
+                    <a href="" class="btn">Github</a>
+                    <a href="" class="btn">Live Demo</a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <!--  <div class="portfolio-box">
                 <img src="assets/images/portfolio/portfolio.jpg" alt="">
                 <h2>PrepMate</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
                     voluptatum beatae quae. Iste molestiae officia facere?</p>
                 <div class="portfolio-btn">
-                    <a href="" class="btn">Source Code</a>
-                    <a href="" class="btn">Preview</a>
+                    <a href="" class="btn">Github</a>
+                    <a href="" class="btn">Live Demo</a>
                 </div>
             </div>
-            <div class="portfolio-box">
+           <div class="portfolio-box">
                 <img src="assets/images/portfolio/portfolio.jpg" alt="">
                 <h2>PrepMate</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
                     voluptatum beatae quae. Iste molestiae officia facere?</p>
                 <div class="portfolio-btn">
-                    <a href="" class="btn">Source Code</a>
-                    <a href="" class="btn">Preview</a>
+                    <a href="" class="btn">Github</a>
+                    <a href="" class="btn">Live Demo</a>
                 </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="assets/images/portfolio/portfolio.jpg" alt="">
-                <h2>PrepMate</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
-                    voluptatum beatae quae. Iste molestiae officia facere?</p>
-                <div class="portfolio-btn">
-                    <a href="" class="btn">Source Code</a>
-                    <a href="" class="btn">Preview</a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="assets/images/portfolio/portfolio.jpg" alt="">
-                <h2>PrepMate</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis ex illo delectus,
-                    voluptatum beatae quae. Iste molestiae officia facere?</p>
-                <div class="portfolio-btn">
-                    <a href="" class="btn">Source Code</a>
-                    <a href="" class="btn">Preview</a>
-                </div>
-            </div>
+            </div> -->
 
         </div>
         <div class="see-more-btn">
-            <a href="" class="">See More</a>
+            <a href="https://github.com/oluwaseyipd?tab=repositories" class="">Explore More</a>
         </div>
 
     </section>
+
+
     <!-- Testimonials -->
     <div id="testimonials" class="testimonials">
         <div class="testimonials-section-title">
@@ -433,6 +468,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide testimonials-box">
                      <div class="quote">
                         <img src="assets/images/icons/quote-d.png" alt="">
@@ -463,8 +499,7 @@
         <div class="contact-container">
             <div class="contact-left-content">
                 <h2>Get in Touch</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fuga earum, molestiae culpa ipsum
-                    vel.</p>
+                <p>Feel free to reach out! Whether you have questions or want to collaborate, <br>I’d love to hear from you.</p>
 
                 <div class="contact-info">
                     <div class="contact-info-item">
@@ -490,14 +525,17 @@
 
                 <h3>Conect with Me</h3>
                 <div class="social-contact">
-                    <a href="">
+                    <a href="https://x.com/oluwaseyipd?t=Ic0bEtPkixq0j23KEkMCUQ&s=09">
                         <img src="assets/images/icons/twitter-w.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/oluwaseyidp?igsh=MWIwM3IycXRpbjcwag==">
                         <img src="assets/images/icons/instagram-w.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/abiola-john-oluwaseyi-b65336234">
                         <img src="assets/images/icons/linkedin-w.png" alt="">
+                    </a>
+                    <a href="https://github.com/oluwaseyipd">
+                        <img src="assets/images/icons/github-w.png" alt="">
                     </a>
                 </div>
             </div>

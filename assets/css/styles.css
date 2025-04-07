@@ -7,6 +7,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Zealote';
+    src: url('zealote.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .custom-text {
+    font-family: 'Zealote', sans-serif;
+  }
+
 :root {
     --primary: #2842b1;
     --light: #ffffff;
@@ -36,6 +47,10 @@ body, html {
     transition: background-color 0.3s, color 0.3s;
 }
 
+p{
+    font-size: 18px;
+    font-weight: 200;
+}
 
 /* ===============================
    Navbar Styling
@@ -201,13 +216,16 @@ body, html {
 
 .hero-left-content h3{
     font-size: 40px;
-    font-weight: 500;
     color: var(--primary);  
+    transform: perspective(500px) rotateY(-10deg);
 }
 
 .hero-left-content h1{
     font-size: 80px;
     margin-bottom: 10px;
+    transform: perspective(500px) rotateY(-10deg);
+    letter-spacing: 5px;
+
 }
 
 .hero-left-content .quotes{
@@ -220,10 +238,13 @@ body, html {
     margin-bottom: 20px;
     line-height: 1.5;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: perspective(500px) rotateY(-10deg);
 }
 
 .hero-left-content .quotes p{
     color: var(--light);
+    font-size: 20px; 
+    font-weight: 400;
 }
 
 .hero-mid-content{
@@ -305,6 +326,9 @@ body, html {
 .quick-contact a:hover {
     background:  var(--primary);
 }
+
+
+
 /* ===============================
    About Me Styling
 =================================*/
@@ -369,7 +393,7 @@ body, html {
 
 
 .about-content h2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     color: var(--primary);
     margin-bottom: 10px;
@@ -397,6 +421,24 @@ body, html {
 .about-content a:hover {
     background: var(--dark);
     shadow: var(--shadow);
+}
+
+.about-content .skill-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.about-content .skill-tabs span{
+    background: var(--primary);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--light);
+    font-size: 16px;
 }
 
 
@@ -640,7 +682,7 @@ body, html {
 
 .portfolio-tabs{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
     justify-content: center;
@@ -653,20 +695,53 @@ body, html {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 20px 0;
 }
+.portfolio-tabs .portfolio-box:last-child{
+    filter: blur(2px);
+}
 
 .portfolio-tabs .portfolio-box img{
-    max-width: 500px;
+    max-width: 100%;
     border-radius: 15px 15px 0 0;
 }
 
 .portfolio-tabs .portfolio-box h2{
     font-size: 28px;
-    margin: 8px 0;
+    margin: 15px 0;
+    font-weight: 400;
 }
+
+.portfolio-tabs .portfolio-box:last-child span{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.portfolio-box .skill-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.portfolio-box .skill-tabs span{
+    background: var(--primary);
+    padding: 5px 10px;
+    color: var(--light);
+    font-size: 12px;
+}
+
 
 .portfolio-tabs .portfolio-box p{
     font-size: 18px;
     margin-bottom: 20px;
+    font-weight: 200;
+}
+.portfolio-tabs .portfolio-box:last-child p{
+    margin-top: 20px;
+    filter: blur(3px);
 }
 .portfolio-btn{
     display: flex;
@@ -720,7 +795,7 @@ body, html {
 =================================*/
 
 .testimonials{
-    padding: 100px 200px;
+    padding: 200px 200px;
     justify-content: space-between;
     align-items: center;
     /* background: var(--dark); */
@@ -896,10 +971,10 @@ body, html {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.contact-info .contact-info-item:hover{
+/* .contact-info .contact-info-item:hover{
     background: var(--text-color);
     color: var(--dark);
-}
+} */
 .contact-info .contact-info-item img{
     width: 40px;
     height: 40px;   
