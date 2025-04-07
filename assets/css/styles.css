@@ -756,12 +756,16 @@ body, html {
     text-align: center; 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
+.testimonials-container{
+    width: 100%;
+    margin: auto;
+}
 
 .testimonials-tabs{
     display: flex;
-    justify-content: center;
-    align-items: center; 
     gap: 20px;
+    /* padding: 0 100px; */
+    margin-bottom: 50px;
 }
 .testimonials-tabs .testimonials-box{
     background:var(--box-color);    

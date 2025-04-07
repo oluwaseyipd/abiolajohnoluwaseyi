@@ -90,7 +90,7 @@ links.forEach(link => {
 //          Testimonial
 // ------------------------------------
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".testimonials-container", {
     loop: true,
     grabCursor: true,
     slidesPerView: 1, // Default: 1 slide per view
